@@ -1,0 +1,34 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\General Logic\GameScript.boo">
+    <Files>
+      <File FileName="..\asteroids\Assets\Scripts\Boulder.boo" Line="1" Column="1" />
+      <File FileName="..\asteroids\Assets\Scripts\BoulderGenerator.boo" Line="17" Column="2" />
+      <File FileName="Assets\Scripts\General Logic\MobileInputScript.boo" Line="29" Column="18" />
+      <File FileName="Assets\Scripts\Level Logic\CameraController.boo" Line="18" Column="25" />
+      <File FileName="Assets\Scripts\Game Objects\PaddleScript.boo" Line="20" Column="19" />
+      <File FileName="Assets\Scripts\General Logic\GameScript.boo" Line="10" Column="8" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State expanded="True">
+          <Node name="Assembly-Boo" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="Scripts" expanded="True">
+                <Node name="Game Objects" expanded="True" />
+                <Node name="General Logic" expanded="True">
+                  <Node name="GameScript.boo" selected="True" />
+                </Node>
+                <Node name="Level Logic" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

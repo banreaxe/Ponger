@@ -1,0 +1,8 @@
+Version 0.2.2
+-------------
+- created a changelog going forward
+- added paddle cameras
+- camera controller to switch between cameras
+- started mobile input support using accelerometer
+- created gamescript to track generic game variables
+- first git tag
