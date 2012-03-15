@@ -1,6 +1,7 @@
 import UnityEngine
 
-class GameScript (MonoBehaviour): 
+class GameScript (MonoBehaviour):
+""" generic game config settings """
 	
 	mobile as bool
 	
