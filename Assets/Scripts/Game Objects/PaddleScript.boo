@@ -22,7 +22,12 @@ class PaddleScript (MonoBehaviour):
 		if gameScript.IsMobile():
 			axis = mobileInput.AxisV() * 0.75f
 		else:
-			axis = Input.GetAxisRaw("Vertical")
+			if gameScript.InPaddleCamera():
+				axis = Input.GetAxisRaw("Horizontal")
+				if not gameScript.IsPlayerOnRight():
+					axis = Input.GetAxisRaw("Horizontal") * -1
+			else:
+				axis = Input.GetAxisRaw("Vertical")
 		force = axis * moveSpeed
 		
 		if axis != 0:
@@ -31,6 +36,5 @@ class PaddleScript (MonoBehaviour):
 		speedDiff = rigidbody.velocity.magnitude - maxSpeed
 		if speedDiff > 0:
 			rigidbody.AddForce(Vector3(0, speedDiff, 0))
-		
 		
 		transform.position.y = Mathf.Clamp(transform.position.y, -2.3, 4.6)
