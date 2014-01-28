@@ -11,8 +11,10 @@ class GameScript (MonoBehaviour):
 	
 	def Start ():
 		cameraControl = GameObject.Find('CameraController').GetComponent('CameraController')
+		
 		if Application.platform == RuntimePlatform.Android or Application.platform == RuntimePlatform.IPhonePlayer:
 			mobile = true
+			GameObject.Find('MobileInput').active = false;
 		else:
 			mobile = false
 	
