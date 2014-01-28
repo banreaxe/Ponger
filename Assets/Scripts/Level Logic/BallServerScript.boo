@@ -4,6 +4,8 @@ Serves a ball either left or right at a random angle if no ball is in play
 */
 class BallServerScript (MonoBehaviour): 
 
+	public ballServerActive as bool = false
+
 	public ballToServe as BallScript
 	public serveForce as single = 200
 	public ballInPlay = false
@@ -14,7 +16,7 @@ class BallServerScript (MonoBehaviour):
 		pass
 	
 	def Update ():
-		if not ballInPlay:
+		if not ballInPlay and ballServerActive:
 			// determine angle
 			angle = Random.Range(30.0F, 150.0F)
 			transform.Rotate(Vector3(0,0,angle*directionToServe))
@@ -28,4 +30,10 @@ class BallServerScript (MonoBehaviour):
 	
 	def SetDirectionLeft():
 		directionToServe = 1.0F
+		
+	public def BallServerActivate():
+		ballServerActive = true;
+		
+	public def BallServerDeActivate():
+		ballServerActive = false;
 		

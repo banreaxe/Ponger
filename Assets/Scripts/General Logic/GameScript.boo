@@ -9,9 +9,12 @@ class GameScript (MonoBehaviour):
 	playerOnRight as bool = true #start player on right side by default
 	cameraControl as CameraController
 	
-	def Start ():
+	def Start ():		
+		
+		// setup camera
 		cameraControl = GameObject.Find('CameraController').GetComponent('CameraController')
 		
+		// determine if mobile
 		if Application.platform == RuntimePlatform.Android or Application.platform == RuntimePlatform.IPhonePlayer:
 			mobile = true
 			GameObject.Find('MobileInput').active = false;
