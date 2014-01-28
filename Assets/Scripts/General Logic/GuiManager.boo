@@ -39,5 +39,5 @@ class GuiManager (MonoBehaviour):
 			gameScript.ToggleCameraMode()
 		
 			
-		
+
 	

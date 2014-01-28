@@ -1,30 +1,9 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Game Objects\PaddleScript.boo">
+  <MonoDevelop.Ide.Workspace />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\General Logic\GameScript.boo">
     <Files>
-      <File FileName="Assets\Scripts\General Logic\MobileInputScript.boo" Line="11" Column="22" />
-      <File FileName="Assets\Scripts\Level Logic\CameraController.boo" Line="32" Column="2" />
-      <File FileName="Assets\Scripts\Game Objects\PaddleScript.boo" Line="27" Column="40" />
-      <File FileName="Assets\Scripts\General Logic\GameScript.boo" Line="31" Column="24" />
-      <File FileName="Assets\Scripts\General Logic\GuiManager.boo" Line="8" Column="19" />
+      <File FileName="Assets\Scripts\General Logic\GameScript.boo" Line="1" Column="1" />
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State expanded="True">
-          <Node name="Assembly-Boo" expanded="True">
-            <Node name="Assets" expanded="True">
-              <Node name="Scripts" expanded="True">
-                <Node name="Game Objects" expanded="True">
-                  <Node name="PaddleScript.boo" selected="True" />
-                </Node>
-                <Node name="General Logic" expanded="True" />
-                <Node name="Level Logic" expanded="True" />
-              </Node>
-            </Node>
-          </Node>
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
