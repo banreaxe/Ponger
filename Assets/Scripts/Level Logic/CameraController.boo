@@ -2,7 +2,7 @@ import UnityEngine
 
 class CameraController (MonoBehaviour): 
 
-	camera_modes = ('main', 'left', 'right')
+	//camera_modes = ('main', 'left', 'right')
 	public camera_mode = 0
 	public maincam as GameObject
 	public leftcam as GameObject

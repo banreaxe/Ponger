@@ -3,8 +3,8 @@ using System.Collections;
 
 public class GameManager : MonoBehaviour {
 
-	public TitleScreen titleScreen;
-	public BallServerScript ballServer;
+	private TitleScreen titleScreen;
+	private GameObject ballServer;
 
 	// Use this for initialization
 	void Start () {
@@ -13,7 +13,7 @@ public class GameManager : MonoBehaviour {
 		GameEventManager.GamePlayOver += GamePlayOver;
 	
 		titleScreen = GameObject.Find("TitleScreen").GetComponent<TitleScreen>();
-		ballServer = GameObject.Find ("BallServer").GetComponent<BallServerScript>();
+		ballServer = GameObject.FindGameObjectWithTag ("BallServer");
 
 
 		GameEventManager.TriggerInTheBeginning();
@@ -29,8 +29,8 @@ public class GameManager : MonoBehaviour {
 	{
 		// activate title screen
 		titleScreen.Activate();
-		//SendMessage ("BallServerDeActivate");
-		ballServer.BallServerDeActivate();
+		ballServer.SendMessage ("BallServerDeActivate");
+		//ballServer.BallServerDeActivate();
 		// ball server disable
 	}
 
@@ -40,13 +40,13 @@ public class GameManager : MonoBehaviour {
 		titleScreen.DeActivate();
 		// activate gameplay
 
-		//SendMessage ("BallServerActivate");
-		ballServer.BallServerActivate();
+		ballServer.SendMessage ("BallServerActivate");
+		//ballServer.BallServerActivate();
 	}
 
 	void GamePlayOver()
 	{
-		SendMessage ("BallServerDeActivate");
+		ballServer.SendMessage ("BallServerDeActivate");
 		// activate gameover screen
 	}
 }
