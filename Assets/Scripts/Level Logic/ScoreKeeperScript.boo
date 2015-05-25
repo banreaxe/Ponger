@@ -12,8 +12,8 @@ class ScoreKeeperScript (MonoBehaviour):
 		pass
 
 	def OnGUI():
-		GameObject.FindGameObjectWithTag("ScoreLeft").guiText.text = _scoreLeft.ToString()
-		GameObject.FindGameObjectWithTag("ScoreRight").guiText.text = _scoreRight.ToString()
+		GameObject.FindGameObjectWithTag("ScoreLeft").GetComponent[of GUIText]().text = _scoreLeft.ToString()
+		GameObject.FindGameObjectWithTag("ScoreRight").GetComponent[of GUIText]().text = _scoreRight.ToString()
 	
 	def PointLeft():
 		_scoreLeft += 1

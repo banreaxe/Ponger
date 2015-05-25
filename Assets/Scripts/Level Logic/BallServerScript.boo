@@ -21,7 +21,7 @@ class BallServerScript (MonoBehaviour):
 			angle = Random.Range(30.0F, 150.0F)
 			transform.Rotate(Vector3(0,0,angle*directionToServe))
 			ball as BallScript = Instantiate(ballToServe, transform.position, transform.rotation)
-			ball.rigidbody.AddRelativeForce(Vector3.up * 200)
+			ball.GetComponent[of Rigidbody]().AddRelativeForce(Vector3.up * 200)
 			transform.Rotate(Vector3(0,0,angle*directionToServe*-1.0F))
 			ballInPlay = true
 			

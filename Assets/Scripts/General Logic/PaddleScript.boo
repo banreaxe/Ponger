@@ -10,7 +10,7 @@ class PaddleScript (MonoBehaviour):
 
 	def Start ():
 		gameScript = gameObject.Find("Game").GetComponent('GameScript')
-		mobileInput = gameObject.Find("MobileInput").GetComponent('MobileInputScript')
+		//mobileInput = gameObject.Find("MobileInput").GetComponent('MobileInputScript')
 		
 	def Update ():
 		#Debug.Log("magnitude: $(rigidbody.velocity.magnitude)")
@@ -31,10 +31,10 @@ class PaddleScript (MonoBehaviour):
 		force = axis * moveSpeed
 		
 		if axis != 0:
-			rigidbody.AddForce(Vector3(0, force, 0))
+			GetComponent[of Rigidbody]().AddForce(Vector3(0, force, 0))
 		
-		speedDiff = rigidbody.velocity.magnitude - maxSpeed
+		speedDiff = GetComponent[of Rigidbody]().velocity.magnitude - maxSpeed
 		if speedDiff > 0:
-			rigidbody.AddForce(Vector3(0, speedDiff, 0))
+			GetComponent[of Rigidbody]().AddForce(Vector3(0, speedDiff, 0))
 		
 		transform.position.y = Mathf.Clamp(transform.position.y, -2.3, 4.6)
